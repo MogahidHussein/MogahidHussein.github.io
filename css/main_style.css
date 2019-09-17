@@ -1,3 +1,11 @@
+/*
+colorblind safe color palette from colorbrewer2.org.
+#92c5de - light blue
+#ca0020 - red
+#f7f7f7 - off white
+*/
+
+
 body {
   background-color: #92c5de;
   color: #ca0020;
