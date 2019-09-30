@@ -15,7 +15,7 @@ const y = 33;
 document.writeln(x+y);
 document.writeln("<br>");
 document.writeln(x+= 33);*/
-
+/*
 document.writeln("<button onclick='condition()'>Conditional Test</button>")
 function condition()
 {
@@ -28,4 +28,6 @@ function condition()
   {
       document.writeln("You chose Cancel!");
   }
-}
+}*/
+user_name = window.prompt('Please enter your name', 'Type your name here');
+document.write(user_name); 

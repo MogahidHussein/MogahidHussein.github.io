@@ -29,8 +29,9 @@
     <img src=images/profile-picture.png width=500px height=500px />
   </div>
   <div id="welcome-text">
-    <script src="javascript/external.js"></script>
-    Welcome to my webpage.<br>
+
+    My name is <script src="javascript/external.js"></script>.
+    <br>
     I'm a PhD student majoring in GIScience in the
     <a href="https://www.geo.txstate.edu/">Geography Department</a> at
     <a href="https://txstate.edu">Texas State University</a>.
@@ -46,6 +47,13 @@
 
 </body>
 <div class="footer">
-  <p>@2019 by Mogahid Hussein</p>
+  <script>
+  // comment here
+  var today = new Date();
+  // comment here
+  var year = today.getFullYear();
+  // comment here
+  document.writeln('Copyright &copy;'+ year);
+  </script>
 </div>
 </html>
