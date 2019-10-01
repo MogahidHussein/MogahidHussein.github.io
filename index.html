@@ -5,7 +5,7 @@
   <!-- All styling for this HTML document are contained in this external css
   file -->
   <link rel="stylesheet" type="text/css" href="css/main_style.css">
-
+  <script src="javascript/external.js"></script>
   <style>
 .footer {
    position: fixed;
@@ -23,8 +23,10 @@
   <div id="body-container">
 
     <div id="header">
-      <h1>Hello, welcome to my webpage, <script src="javascript/external.js">
-      </script>
+      <h1>Hello, welcome to my webpage,
+        <script>
+        document.write(welcome()); 
+        </script>
       </h1>
   </div>
   <div id="profile-picture">
