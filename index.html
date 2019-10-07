@@ -6,28 +6,17 @@
   file -->
   <link rel="stylesheet" type="text/css" href="css/main_style.css">
   <script src="javascript/external.js"></script>
-  <style>
-.footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: red;
-   color: white;
-   text-align: center;
-}
-</style>
 </head>
 
 <body>
   <div id="body-container">
 
     <div id="header">
-      <h1>Hello, welcome to my webpage,
+
         <script>
         document.write(welcome());
         </script>
-      </h1>
+        
   </div>
 
   <div id="profile-picture">
@@ -48,27 +37,29 @@
     <li>Geospatial Analysis</li>
     <li>Remote sensing </li>
     <li>UAS image processing</li>
-
   </ol>
   </div>
 
   <div id ="webmap-reviews">
     <h3>Webmap Reviews</h3>
-    <script>webmap_table();</script>
-
+    <script>
+      webmap_table();
+    </script>
   </div>
+
+  <div id="footer">
+    <script>
+      // creates a new data object with current date and time
+      var today = new Date();
+      // this get date method gets the year as a four digit number (yyyy)
+      var year = today.getFullYear();
+      // writes in the documwent in a new line the Copyright@year
+      document.writeln('Copyright &copy;'+ year);
+    </script>
+  </div>
+
 </div>
 
-<div class="footer">
-  <script>
-    // creates a new data object with current date and time
-    var today = new Date();
-    // this get date method gets the year as a four digit number (yyyy)
-    var year = today.getFullYear();
-    // writes in the documwent in a new line the Copyright@year
-    document.writeln('Copyright &copy;'+ year);
-  </script>
-</div>
 
 </body>
 </html>

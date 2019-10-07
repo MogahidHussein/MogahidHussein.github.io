@@ -24,7 +24,7 @@ h1 {
   margin: auto;
   height: 100vh;
   border: 2px solid #f7f7f7;
-  boarder-radius: 25px;
+  border-radius: 25px;
   overflow: hidden;
 }
 #header {

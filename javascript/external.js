@@ -32,6 +32,17 @@ function condition()
 
 /*user_name = window.prompt('Please enter your name', 'Type your name here');
 document.write(user_name); */
+var webmaps =
+[
+  ["The GRDC-the world-wide repositry of river discharge data",
+  "https://www.bafg.de",
+  "This webmap offers a dataset of river discharge. This webmap offers a dataset of river discharge. This webmap offers a dataset of river discharge."
+  ],
+  ["NOAA for environmental information",
+   "https://www.ncdc.noaa.gov/isd",
+   "This is designed for researchers and policy makers. This is designed for researchers and policy makers. This is designed for researchers and policy makers."
+  ]
+];
 
 function welcome()
 {
@@ -41,17 +52,18 @@ function welcome()
   // A prompt box is used to prompt users to input a value before entering a page.
   user_name = window.prompt(a, b);
   message = "<h1>Hello, welcome to my webpage, " + user_name + "!</h1>";
-  return message}
+  return message
+}
 
 function webmap_table()
 {
   document.write("<table width=100%>");
-  for (var row=0; row < 2; row++)
+  for (var row=0; row < webmaps.length; row++)
   {
     document.write("<tr>");
-    for (var column=0; column < 3; column++)
+    for (var column=0; column < webmaps[0].length; column++)
     {
-      document.write("<td>" + row + "," + column + "</td>");
+      document.write("<td>" + webmaps[row] [column] + "</td>");
     }
     document.write("</tr>");
   }
