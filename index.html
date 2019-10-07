@@ -14,9 +14,9 @@
     <div id="header">
 
         <script>
-        document.write(welcome());
+         document.write(welcome());
         </script>
-        
+
   </div>
 
   <div id="profile-picture">
@@ -40,6 +40,27 @@
   </ol>
   </div>
 
+  <div id="area_calculator">
+      <div id="display_result"></div>
+      length:<br>
+      <input type= "number" step= "0.1" name='length'><br>
+      width:<br>
+      <input type="number" step= "0.1" name= 'width'><br>
+      <button onclick="calculate()"> calculate </button>
+
+
+
+    <script>
+    function calculate() {
+      var length = document.getElementsByName('length')[0].value;
+      var width = document.getElementsByName('width')[0].value;
+      var result = length * width;
+      document.getElementById('display_result').innerHTML = result.toString();
+
+    }
+   </script>
+   </div>
+
   <div id ="webmap-reviews">
     <h3>Webmap Reviews</h3>
     <script>
@@ -57,6 +78,10 @@
       document.writeln('Copyright &copy;'+ year);
     </script>
   </div>
+
+
+
+
 
 </div>
 
